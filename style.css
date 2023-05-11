@@ -290,7 +290,7 @@ section {
     left: 0;
     width: 0;
     height: 100;
-    background: black;
+    background: turquoise;
     z-index: -1;
     transition: 5s;
 }
@@ -317,3 +317,49 @@ section {
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 3rem;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255, 45, 45)50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
