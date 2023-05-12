@@ -419,3 +419,7 @@ section {
     margin: .8rem 0 2.7rem;
     display: flex;
 }
+
+contact form .textarea-field textarea{
+    resize: none;
+}
