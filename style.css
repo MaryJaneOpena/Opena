@@ -408,3 +408,14 @@ section {
     border-radius: .6rem;
     border: .2rem solid black;
 }
+/*
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: beige;
+}
+*/
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
