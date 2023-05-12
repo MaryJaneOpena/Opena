@@ -60,7 +60,12 @@ body {
     color: black;
     font-weight: 500;
     margin-left: 3.5rem;
-    transition: 3s;
+    transition: 2s;
+}
+.navbar a:hover {
+    background-color: turquoise;
+    color: black;
+    box-shadow: 0 0 10x turquoise;
 }
 
 #menu-icon {
@@ -68,6 +73,7 @@ body {
     color: black;
     cursor: pointer;
     display: none;
+    
 }
 
 section {
@@ -236,8 +242,10 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: auto;
+    background: bisque;
     padding-bottom: 3rem;
 }
+
 
 .education .education-row {
     display: flex;
@@ -324,6 +332,7 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: auto;
+    background: beige;
     padding-bottom: 3rem;
 }
 .row {
@@ -363,3 +372,39 @@ section {
     padding: 10px;
 }
 
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: bisque;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: beige;
+    border-radius: .6rem;
+    border: .2rem solid black;
+}
