@@ -335,14 +335,14 @@ section {
     background: beige;
     padding-bottom: 3rem;
 }
-.row {
+.projects-row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
-.box {
+.projects-box {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -358,14 +358,14 @@ section {
     transition: all .8s;
 }
 
-.box:hover {
+.projects-box:hover {
     background-position: left bottom;
     color: white;
     border: none;
     box-shadow: 0 0 20px rgb(255, 45, 45);
 }
 
-.box img {
+.projects-box img {
     width: 80px;
     height: 80px;
     background-color: white;
@@ -376,6 +376,7 @@ section {
     min-height: auto;
     padding-bottom: 7rem;
     background: bisque;
+    column-count: 2;
 }
 
 .contact form{
