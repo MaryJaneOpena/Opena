@@ -102,6 +102,7 @@ section {
     line-height: 1.3;
 }
 
+
 .home-content .text-animate {
     position: relative;
     width: 8rem;
@@ -239,20 +240,71 @@ section {
 }
 
 .education {
+    position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    /*background-color: beige;*/
+	padding: 20px 100px;
+}
+
+.education:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("images/educ1.jpg") no-repeat center;
+	background-size: cover;
+	z-index: -1;
+}
+.education-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
-    background: bisque;
+   /* min-height: auto;
+    gap: 2rem;
     background: url("images/educ1.jpg") no-repeat center;
 	background-size: cover;
 	z-index: -1;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;*/
+    flex-wrap: wrap;
 }
 
+.education-section .education-box{
+    flex: 1rem;
+    flex-direction: column;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    background: white;
+    text-align: center;
+    border: 3px solid #000;
+    transition: .5s ease;
+}
+.education-box:hover{
+    border: 2px solid orange;
+    transform: scale(1.2);
+}
 
-.education .education-row {
+.education-box i{
+    font-size: 30px;
+    color: red;
+}
+
+.education h3{
+    font-size: 2.6rem;
+}
+
+.education-box p{
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
+}
+/*.education .education-row {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -329,7 +381,7 @@ section {
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
-}
+}*/
 
 .projects {
     position: relative;
