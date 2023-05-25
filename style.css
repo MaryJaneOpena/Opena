@@ -209,7 +209,7 @@ section {
 
 .heading {
     font-size: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -224,7 +224,7 @@ section {
 }
 
 .about-img img {
-    width: 90%;
+    width: 110%;
     border-radius: 50%;
     border: .2rem solid beige;
 }
@@ -252,7 +252,7 @@ section {
 }
 
 .about-content p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin: 2rem 0 3rem;
 }
 
