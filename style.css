@@ -427,6 +427,13 @@ section {
     background-size: 100% 200%;
     transition: all .8s;
 }
+.projects-box h1{
+    font-size: 2rem;
+}
+
+.projects-box p{
+    font-size: 1.5rem;
+}
 
 .projects-box:hover {
     background-position: left bottom;
