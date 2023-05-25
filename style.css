@@ -40,7 +40,11 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: 3s;
 }
+ header.sticky{
+    background: pink;
+ }
 
 .logo {
     font-size: 2.5rem;
@@ -52,7 +56,7 @@ body {
 .navbar {
     font-size: 1.7rem;
     color: black;
-    background-color: white;
+    background-color: beige; 
     font-weight: 500;
     margin-left: 3.5rem;
 }
@@ -97,11 +101,14 @@ section {
 }
 
 .home-content h1 {
+    color: antiquewhite;
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.3;
 }
-
+ .home-content h1 span{
+    color: lightcoral;
+ }
 
 .home-content .text-animate {
     position: relative;
@@ -130,11 +137,11 @@ section {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: transparent;
-    border: .3rem solid burlywood;
+    background-color: transparent;
+    border: .3rem solid white;
     border-radius: 70px;
     font-size: 20px;
-    color: black;
+    color: white;
     z-index: 1;
     overflow: hidden;
 }
@@ -146,7 +153,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: burlywood;
+    background: black;
     z-index: -1;
     transition: .5s;
 }
@@ -178,7 +185,23 @@ section {
     flex-direction: column;
     gap: 2rem;
     background: beige;
+    /*background-image: url(images/aboutme.webp) no-repeat center;
+	background-size: cover;
+	z-index: -1;*/
     padding-bottom: 6rem;
+    
+}
+
+.about:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("images/aboutme.webp") no-repeat center;
+	background-size: cover;
+	z-index: -1;
 }
 
 .heading {
@@ -263,31 +286,35 @@ section {
 	z-index: -1;
 }
 .education-section {
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   /* min-height: auto;
-    gap: 2rem;
-    background: url("images/educ1.jpg") no-repeat center;
-	background-size: cover;
-	z-index: -1;
-    padding-bottom: 3rem;*/
+    justify-content: space-around;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    
 }
 
 .education-section .education-box{
     flex: 1rem;
     flex-direction: column;
-    padding: 3rem 2rem 4rem;
+    padding: 2rem 3rem 4rem;
     border-radius: 2rem;
     background: white;
     text-align: center;
     border: 3px solid #000;
     transition: .5s ease;
 }
+
+.education-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: left;
+}
+
 .education-box:hover{
-    border: 2px solid orange;
+    border: 3px solid orange;
     transform: scale(1.2);
 }
 
@@ -304,84 +331,10 @@ section {
     font-size: 1.5rem;
     margin: 1rem 0 3rem;
 }
-/*.education .education-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
 
-.education-row .education-column {
-    flex: 1 1 30rem;
+.education-box a{
+    font-size: 1 ;
 }
-
-.education-column .title {
-    font-size: 2rem;
-    margin: 0 0 1rem 1.5rem;
-}
-
-.education-column .education-box {
-    border-left: 2rem solid none;
-}
-
-.education-box .education-content {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.education-box .education-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1.1rem;
-    width: 2rem;
-    height: 2rem;
-    background: red;
-    border-radius: 50%;
-}
-
-.education-content .content {
-    position: relative;
-    padding: 1.5rem;
-    border: .2rem solid turquoise;
-    border-radius: .6rem;
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-
-.education-content .content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100;
-    background: turquoise;
-    z-index: -1;
-    transition: 5s;
-}
-
-.education-content .content:hover:before {
-    width: 100%;
-}
-
-.education-content .content-year {
-    font-size: 2rem;
-    color: black;
-    padding-bottom: .5rem;
-}
-
-.education-content .content-year i {
-    padding-right: .5rem;
-}
-
-.education-content .content h3 {
-    font-size: 2rem;
-}
-
-.education-content .content p {
-    font-size: 1.6rem;
-    padding-top: .5rem;
-}*/
 
 .projects {
     position: relative;
