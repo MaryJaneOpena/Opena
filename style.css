@@ -423,7 +423,7 @@ section {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("images/contact.webp") no-repeat center;
+	background: url("images/contact.jpg") no-repeat center;
 	background-size: cover;
 	z-index: -1;
 }
