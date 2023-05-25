@@ -11,14 +11,6 @@
 }
 
 
-/*:root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-}
-*/
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -42,14 +34,12 @@ body {
     z-index: 100;
     transition: 3s;
 }
- header.sticky{
-    background: pink;
- }
+
 
 .logo {
     font-size: 2.5rem;
     color: black;
-    background-color: white;
+    background-color: beige;
     font-weight: 600;
 }
 
@@ -153,7 +143,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: black;
+    background: gray;
     z-index: -1;
     transition: .5s;
 }
@@ -162,21 +152,34 @@ section {
     width: 100%;
 }
 
-.home-imgHover {
+.home-img {
     position: absolute;
-    top: 0;
+    top: 15%;
     right: 0;
     width: 45%;
     height: 100%;
     background: transparent;
-    border: 2px solid beige;
+    border: transparent;
     transition: 3s;
 }
 
-.home-imgHover:hover {
+/*.home-img:hover {
     background: beige;
     opacity: .8;
+}*/
+ 
+.home-img img{
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    margin-top: 0;
+    margin-bottom: 0%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .about {
     display: flex;
@@ -184,10 +187,10 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: beige;
-    /*background-image: url(images/aboutme.webp) no-repeat center;
+    background: gray;
+    background-image: url(images/aboutme.webp) no-repeat center;
 	background-size: cover;
-	z-index: -1;*/
+	z-index: -1;
     padding-bottom: 6rem;
     
 }
@@ -256,10 +259,11 @@ section {
 .btn-box.btns {
     display: inline-block;
     width: 15rem;
+    background: white;
 }
 
 .btn-box.btns a::before {
-    background: paleturquoise;
+    background: red;
 }
 
 .education {
@@ -376,7 +380,7 @@ section {
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(45, 255, 118)50%, white 50%);
+    background: linear-gradient(to top, rgb(45, 200, 118)50%, white 50%);
     background-size: 100% 200%;
     transition: all .8s;
 }
@@ -398,7 +402,7 @@ section {
 .projects-box img {
     width: 80px;
     height: 80px;
-    background-color: white;
+    background-color: transparent;
     padding: 10px;
 }
 
