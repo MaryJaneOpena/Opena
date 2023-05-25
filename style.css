@@ -380,7 +380,7 @@ section {
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(45, 200, 118)50%, white 50%);
+    background: linear-gradient(to top, gray 50%, white 50%);
     background-size: 100% 200%;
     transition: all .8s;
 }
